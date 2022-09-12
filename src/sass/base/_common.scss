@@ -1,1 +1,40 @@
+html {
+  box-sizing: border-box;
+}
 
+/* Загальне */
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  // outline: 1px solid tomato;
+}
+
+// :root {
+//     --primary-color: rgba(255, 255, 255, 1);
+//     --first-part: rgba(255, 184, 202, 1);
+//     --second-part: rgba(240, 209, 165, 1);
+//     --third-part: rgba(194, 226, 151, 1);
+
+// }
+
+body {
+  // background: var(--primary-color);
+  // color: var(--primary-color);
+  font-family: 'DM Sans', Cormorant Garamond;
+  font-style: normal;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+}
