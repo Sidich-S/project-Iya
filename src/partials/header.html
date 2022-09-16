@@ -1,1 +1,91 @@
-<section>header</section>
+<section>
+    <header class="header">
+      <div class="container">
+        <div class="header__navbar">
+          <ul class="header__firstsection">
+            <li class="header__firstnav">
+              <a class="header__link" href="">Home</a>
+            </li>
+            <li class="header__firstnav">
+              <a class="header__link" href="">Gallery</a>
+            </li>
+            <li class="header__firstnav">
+              <a class="header__link" href="">Price</a>
+            </li>
+          </ul>
+          <div class="logo">
+            <a class="header__logo" href="#">
+              <svg class="logo__icon" width="80" hiegh="80">
+                <use href="./images/symbol-defs.svg#barberrscissors"></use>
+              </svg>
+            </a>
+          </div>
+          <ul class="header__secondsection">
+            <li class="header__secondnav">
+              <a class="header__link" href="">Advanteges</a>
+            </li>
+            <li class="header__secondnav">
+              <a class="header__link" href="">Cosmetics</a>
+            </li>
+            <li class="header__secondnav">
+              <a class="header__link" href="">Contacts</a>
+            </li>
+          </ul>
+          <a class="lang" href="#">language</a>
+        </div>
+      </div>
+
+      <!-- Створюємо скрите меню -->
+      <button type="button" class="menu-button" data-menu-button>
+        <svg class="header__humburger" width="40" hiegh="40">
+          <use
+            class="iconhumb"
+            href="./images/symbol-defs.svg#menubuttom"
+          ></use>
+          <use
+            class="iconcross"
+            href="./images/symbol-defs.svg#icon-close-black"
+          ></use>
+        </svg>
+      </button>
+      <div class="hiddenmenu" data-menu>
+        <ul class="hiddenmenu__navmenu">
+          <li class="hiddenmenu__nav">
+            <a
+              class="hiddenmenu__navlink hiddenmenu__navlink--active header__link"
+              href="./index.html"
+              >Home</a
+            >
+          </li>
+          <li class="hiddenmenu__nav">
+            <a class="hiddenmenu__navlink header__link" href="#">Gallery</a>
+          </li>
+          <li class="hiddenmenu__nav">
+            <a class="hiddenmenu__navlink header__link" href="#">Price</a>
+          </li>
+        </ul>
+
+        <div class="logo">
+          <a class="header__logo hiddenlogo" href="#">
+            <svg class="logo__icon" width="80" hiegh="80">
+              <use href="./images/symbol-defs.svg#barberrscissors"></use>
+            </svg>
+          </a>
+        </div>
+
+        <ul class="hiddenmenu__navmenu">
+          <li class="hiddenmenu__navtwo">
+            <a
+              class="hiddenmenu__navlink hiddenmenu__navlink--active header__link"
+              href="./index.html"
+              >Advanteges</a
+            >
+          </li>
+          <li class="hiddenmenu__navtwo">
+            <a class="hiddenmenu__navlink header__link" href="#">Cosmetics</a>
+          </li>
+          <li class="hiddenmenu__navtwo">
+            <a class="hiddenmenu__navlink header__link" href="#">Contacts</a>
+          </li>
+        </ul>
+    </section>
