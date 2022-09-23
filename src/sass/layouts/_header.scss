@@ -1,5 +1,5 @@
 .header {
-    background-color: rgb(50, 49, 49);
+    background-color: #000000;
 }
 
 .header__navbar {
@@ -35,8 +35,9 @@
     position: absolute;
     left: 10;
     top: 10px;
-    font-family: 'Pacifico', cursive;
-    color: wheat;
+    font-family: 'DM Sans',
+        'Cormorant Garamond';
+    color: #f9f9f9;
 
 }
 
@@ -55,10 +56,11 @@
 
 .header__link {
     position: relative;
+    color:#f9f9f9;
 
-    // &:hover:before {
-    //     width: 100%;
-    // }
+        &:hover{
+     color:#cdaa7d;;
+    }
     // & ::before {
     //         transition: width 0.35s;
     //     }
@@ -71,7 +73,7 @@
     bottom: -5px;
     width: 100%;
     height: 2px;
-    background-color: wheat;
+    background-color:#cdaa7d;
     transition: transform 0.35s;
     transform: scaleX(0);
     transform-origin: left;
@@ -80,6 +82,7 @@
 .header__link:hover:before {
     width: 100%;
     transform: scaleX(1);
+    color: #cdaa7d;;
 
 }
 
@@ -97,7 +100,7 @@
 
 // }
 .logo__icon {
-    fill: wheat;
+    fill: #f9f9f9;
 }
 
 .menu-button {
@@ -127,7 +130,7 @@
 
 .menu-button .iconhumb {
     display: block;
-    fill: wheat;
+    fill:#f9f9f9;
 }
 
 .menu-button.is-open .iconcross {
@@ -136,7 +139,7 @@
 
 .menu-button .iconcross {
     display: none;
-    fill: wheat;
+    fill: #f9f9f9;
 }
 
 .hiddenmenu {
@@ -152,7 +155,7 @@
     background-color: white;
     padding: 48px 40px;
     z-index: 5;
-    background-color: rgb(50, 49, 49);
+    background-color: #000000;
 
     &.is-open {
         display: flex;
@@ -180,7 +183,8 @@
     width: 100%;
     margin-bottom: auto;
 
-    font-family: 'Roboto';
+    font-family: 'DM Sans',
+        'Cormorant Garamond';
     font-style: normal;
     font-weight: 500;
     font-size: 40px;
