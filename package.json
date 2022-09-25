@@ -2,10 +2,10 @@
   "name": "project-Iya",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://github.com/Sidich-S/project-Iya.git",
+  "homepage": "https://Sidich-S.github.io/project-Iya",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/"
+    "build": "parcel build src/*.html --public-url /project-Iya/"
   },
   "repository": {
     "type": "git",
