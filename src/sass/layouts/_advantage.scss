@@ -35,7 +35,7 @@
 
     &:hover,
     &:focus {
-        color: #ffffff;
+        color:#cdaa7d;
 
     }
 
@@ -62,17 +62,14 @@
 .clients__list {
     display: flex;
     flex-wrap: wrap;
-    align-items: baseline;
+    align-items: center;
     justify-content: center;
     gap: 15px;
-
-
 }
 
 
 .clients__icon {
     fill: currentColor;
-
 }
 
 .clients__title {
