@@ -48,7 +48,12 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
+  filter: grayscale(1);
   transition: transform var(--animation-duration) var(--timing-function);
+}
+
+.gallery__image:hover {
+  filter: grayscale(0);
 }
 
 .gallery__link {
@@ -59,4 +64,5 @@
 
 .gallery__link:hover {
   cursor: zoom-in;
+  filter: grayscale(0);
 }
