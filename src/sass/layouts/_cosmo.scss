@@ -1,98 +1,93 @@
 .clients {
-    background-color: #0f0e0e;
+  background-color: #0f0e0e;
 }
 
 .container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    text-decoration: 0;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: 0;
 }
 
-.section {
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
+// .section {
+//   padding-top: 30px;
+//   padding-bottom: 30px;
+// }
 
 .clients__link {
-    display: flex;
-    width: 100%;
-    height: auto;
+  display: flex;
+  width: 100%;
+  height: auto;
 
+  align-items: center;
+  justify-content: center;
+  color: #7a7070;
 
-    align-items: center;
-    justify-content: center;
-    color: #7a7070;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: #cdaa7d;
+  }
 
-    &:hover,
-    &:focus {
-        color:#cdaa7d;
+  @media screen and (min-width: 480px) {
+    width: 210px;
+    min-height: 92px;
+  }
 
-    }
+  @media screen and (min-width: 768px) {
+    width: 226px;
+    height: 92px;
+  }
 
-    @media screen and (min-width: 480px) {
-        width: 210px;
-        min-height: 92px;
-    }
-
-    @media screen and (min-width: 768px) {
-        width: 226px;
-        height: 92px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        width: 170px;
-        height: 92px;
-    }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+    height: 92px;
+  }
 }
 
 .clients__item {
-    list-style: none;
+  list-style: none;
 }
 
 .clients__list {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
 }
 
-
 .clients__icon {
-    fill: currentColor;
+  fill: currentColor;
 }
 
 .clients__title {
-    color: transparent;
-    font-family: 'Garamond';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 0.5px;
-    line-height: 1.21;
-    text-align: center;
-    margin-bottom: 40px;
+  color: transparent;
+  font-family: 'Garamond';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.5px;
+  line-height: 1.21;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
