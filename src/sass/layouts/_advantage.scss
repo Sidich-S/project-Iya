@@ -1,136 +1,127 @@
-
 .visually-hidden {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-  }
-  
-  /* НАША КОМАНДА */
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+/* Мої переваги */
+.section.advantage {
+  color: wheat;
+  text-align: center;
+  padding-bottom: 80px;
+  padding-top: 80px;
+  background-color: #000;
+
+  // padding: 94px 0;
+}
+
+@media screen and (min-width: 768px) {
   .section.advantage {
-    color: wheat;
-    text-align: center;
-    padding-bottom: 80px;
-    padding-top: 80px;
-   background-color: #000;
-  
-    padding: 94px 0;
+    padding-bottom: 60px;
+    padding-top: 60px;
   }
-  
-  @media screen and (min-width: 768px) {
-    .section.advantage {
-      padding-bottom: 60px;
-      padding-top: 60px;
-    }
-  }
-  
-  @media screen and (min-width: 1200px) {
-    .section.advantage {
-      padding-bottom: 94px;
-      padding-top: 94px;
-    }
-  }
-  
-  
-  /* КАРТКИ */
-  .advantage__title{
-      font-family: 'Roboto', sans-serif;
-      font-size: 24px;
-  }
-  .advantage__list{
-    display: flex;
-  }
-  .advantage__item {
-    margin: 30px 0 0 30px;
-    box-shadow: 0 16px 24px 2px rgba(255, 255, 255, 0.18), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
-  
-  }
-  
-  .advantage__link {
-    display: block;
-    text-decoration: none;
-    color: wheat;
-    transition-property: color;
-    transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .advantage__link:focus,
-  .advantage__link:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
-    transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .advantage__img {
-    width: 100%;
-    display: block;
-  }
-  
-  .advantage__link {
-    position: relative;
-  }
-  
-  .advantage__card {
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .advantage__link:hover .advantage__bcg,
-  .advantage__link:focus .advantage__bcg {
-    opacity: 1;
-  }
-  
-  .advantage__link:hover .advantage__bcg,
-  .advantage__link:focus .advantage__bcg {
-    transform: translateY(0);
-  }
-  .advantage__bcg {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    padding: 20px 30px;
-  
-    background-color: #000;
-    
-    color: wheat;
-    opacity: 0;
-    transform: translateY(100%);
-    transition-property: transform;
-    transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  
-    font-size: 16px;
-    text-align: left;
-    text-decoration: none;
-    line-height: 1.4;
-    
-   
-  
-  }
-  
-  ul > .advantage__bcg-list{
-    list-style:disc;
-  }
-  .advantage__text {
-    margin: 0;
-  }
-  
-  .advantage__card-name {
-    padding: 20px 24px;
-  
-  }
-  
-  .title {
-  
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    margin-top: 0px;
-    margin-bottom: 4px;
-    color: wheat;
-    font-family: 'Roboto', sans-serif;
-  
-  }
-  
+}
+
+// @media screen and (min-width: 1200px) {
+//   .section.advantage {
+//     padding-bottom: 94px;
+//     padding-top: 94px;
+//   }
+// }
+
+/* КАРТКИ */
+.advantage__title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+}
+.advantage__list {
+  display: flex;
+}
+.advantage__item {
+  margin: 30px 0 0 30px;
+  box-shadow: 0 16px 24px 2px rgba(255, 255, 255, 0.18),
+    0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.advantage__link {
+  display: block;
+  text-decoration: none;
+  color: wheat;
+  transition-property: color;
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.advantage__link:focus,
+.advantage__link:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.advantage__img {
+  width: 100%;
+  display: block;
+}
+
+.advantage__link {
+  position: relative;
+}
+
+.advantage__card {
+  position: relative;
+  overflow: hidden;
+}
+
+.advantage__link:hover .advantage__bcg,
+.advantage__link:focus .advantage__bcg {
+  opacity: 1;
+}
+
+.advantage__link:hover .advantage__bcg,
+.advantage__link:focus .advantage__bcg {
+  transform: translateY(0);
+}
+.advantage__bcg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px 30px;
+
+  background-color: #000;
+
+  color: wheat;
+  opacity: 0;
+  transform: translateY(100%);
+  transition-property: transform;
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+  font-size: 16px;
+  text-align: left;
+  text-decoration: none;
+  line-height: 1.4;
+}
+
+ul > .advantage__bcg-list {
+  list-style: disc;
+}
+.advantage__text {
+  margin: 0;
+}
+
+.advantage__card-name {
+  padding: 20px 24px;
+}
+
+.title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-top: 0px;
+  margin-bottom: 4px;
+  color: wheat;
+  font-family: 'Roboto', sans-serif;
+}
